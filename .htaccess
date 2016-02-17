@@ -1,0 +1,7 @@
+AddOutputFilterByType DEFLATE text/plain text/html text/xml
+AddOutputFilterByType DEFLATE text/css text/javascript
+AddOutputFilterByType DEFLATE application/xml application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+
+ErrorDocument 404 http://www.rolandgolla.de
