@@ -781,7 +781,30 @@
     </div>
 </div>
 <!-- Testimonials block END -->
-
+<div class="partners-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="assets/img/wmdb-logo.png" alt="WMDB Sytems GmbH Logo">
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="assets/img/reuter-logo.png" alt="Reuter Onlineshop Logo">
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="assets/img/gamigo-logo.png" alt="Gamigo">
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="assets/img/netm-logo.png" alt="Net-M AG">
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="assets/img/twt-logo.jpeg" alt="TWT">
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <img src="assets/img/dmt-logo.png" alt="DMT">
+            </div>
+        </div>
+    </div>
+</div>
 <!-- BEGIN PRE-FOOTER -->
 <div class="pre-footer" id="contact">
     <div class="container">
