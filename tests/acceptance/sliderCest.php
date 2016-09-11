@@ -49,11 +49,12 @@ class sliderCest
         $firstItem = '.tp-banner > ul > li:nth-of-type(1)';
 
         $I->reloadPage();
+        $I->wait(1);
         $I->moveMouseOver($firstItem);
-        $styles = $I->grabAttributeFrom($firstItem, 'style');
         $I->wait(10);
+        $styles = $I->grabAttributeFrom($firstItem, 'style');
         $I->assertContains('visibility: inherit; opacity: 1;', $styles);
-        $I->moveMouseOver('body > div.header.header-mobi-ext > div');
-        $I->waitForElementVisible('.tp-banner > ul > li:nth-of-type(2)');
+        $I->moveMouseOver('ul.header-navigation > li:nth-of-type(2) > a');
+        $I->waitForElementVisible('.tp-banner > ul > li:nth-of-type(2)', 15);
     }
 }
