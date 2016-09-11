@@ -14,4 +14,4 @@ modules:
         WebDriver:
           url: 'http://www.rolandgolla.de'
           browser: chrome
-          window_size: 1024*800
+          window_size: 1600x1000
