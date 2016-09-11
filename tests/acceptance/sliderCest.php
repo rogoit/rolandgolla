@@ -57,4 +57,14 @@ class sliderCest
         $I->moveMouseOver('ul.header-navigation > li:nth-of-type(2) > a');
         $I->waitForElementVisible('.tp-banner > ul > li:nth-of-type(2)', 15);
     }
+
+    public function rwdResize(AcceptanceTester $I) {
+        $promoLike = '.tp-banner > ul > li.slider-item-1.current-sr-slide-visible > div.tp-caption.large_text.customin.customout.start > div.promo-like > i';
+
+        $I->waitForElement($promoLike);
+        $I->seeElement($promoLike);
+        $I->resizeWindow(400, 800);
+        $I->dontSee($promoLike);
+        $I->resizeWindow(1600, 1000);
+    }
 }
