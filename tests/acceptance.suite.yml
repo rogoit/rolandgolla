@@ -13,5 +13,16 @@ modules:
     config:
         WebDriver:
           url: 'http://www.rolandgolla.de'
-          browser: chrome
+          browser: phantomjs
           window_size: 1600x1000
+env:
+    chrome:
+        modules:
+          config:
+            WebDriver:
+              browser: 'chrome'
+    firefox:
+        modules:
+          config:
+            WebDriver:
+              browser: 'firefox'
