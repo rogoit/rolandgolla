@@ -13,7 +13,6 @@ settings:
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
-        - Codeception\Extension\Recorder
 modules:
     config:
         Db:
@@ -21,6 +20,3 @@ modules:
           user: ''
           password: ''
           dump: tests/_data/dump.sql
-        Codeception\Extension\Recorder:
-          delete_successful: false
-

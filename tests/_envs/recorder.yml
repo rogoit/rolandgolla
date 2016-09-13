@@ -1,0 +1,8 @@
+# `recorder` environment config goes here
+extensions:
+    enabled:
+        - Codeception\Extension\Recorder
+modules:
+    config:
+        Codeception\Extension\Recorder:
+          delete_successful: false
