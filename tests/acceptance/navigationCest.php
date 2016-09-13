@@ -1,15 +1,15 @@
 <?php
-
+use Step\Acceptance\Acceptance;
 
 class navigationCest
 {
-    public function _before(AcceptanceTester $I)
+    public function _before(Acceptance $I)
     {
         $I->amOnPage('/');
         $I->waitForElement('.header');
     }
 
-    public function checkLinksToAnchor(AcceptanceTester $I)
+    public function checkLinksToAnchor(Acceptance $I)
     {
         $links = $I->grabMultiple('.header-navigation > li > a', 'href');
         foreach ($links as $link) {
@@ -17,7 +17,7 @@ class navigationCest
         }
     }
 
-    public function checkLogoLink(AcceptanceTester $I)
+    public function checkLogoLink(Acceptance $I)
     {
         $selector = '.site-logo';
 
@@ -31,7 +31,7 @@ class navigationCest
         $I->assertNotEmpty('_blank', $title);
     }
 
-    public function resizeNavigation(AcceptanceTester $I)
+    public function resizeNavigation(Acceptance $I)
     {
         $burgerMenu = '.mobi-toggler';
         $headerNavigation = '.header-navigation';
@@ -50,7 +50,7 @@ class navigationCest
         $I->waitForElementNotVisible($burgerMenu);
     }
 
-    public function mouseOverAndClick(AcceptanceTester $I)
+    public function mouseOverAndClick(Acceptance $I)
     {
         $selector = '.header-navigation > li';
         $navItems = $I->grabMultiple($selector, 'class');
