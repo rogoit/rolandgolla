@@ -4,15 +4,15 @@ use \Codeception\Scenario;
 
 class navigationCest
 {
-    public function _before(Acceptance $I)
+    public function _before(Acceptance $I, \Page\Startpage $startpage)
     {
-        $I->amOnPage('/');
-        $I->waitForElement('.header');
+        $I->amOnPage($startpage::$URL);
+        $I->waitForElement($startpage::$navigationContainer);
     }
 
-    public function checkLinksToAnchor(Acceptance $I)
+    public function checkLinksToAnchor(Acceptance $I, \Page\Startpage $startpage)
     {
-        $links = $I->grabMultiple('.header-navigation > li > a', 'href');
+        $links = $I->grabMultiple($startpage::$navigationLink, 'href');
         foreach ($links as $link) {
             $I->assertContains('#', $link, 'Link contains #: ' . $link);
         }
