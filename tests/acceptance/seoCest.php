@@ -4,7 +4,7 @@
 class seoCest
 {
     // tests
-    public function tryToTest(AcceptanceTester $I)
+    public function testTitle(AcceptanceTester $I)
     {
         $I->amOnPage('/');
         $I->canSeeInTitle('Clean Code');
