@@ -1,6 +1,7 @@
 {
     "require-dev": {
         "codeception/codeception": "^2.2",
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^2.4",
+        "deployer/deployer": "^4.0"
     }
 }
