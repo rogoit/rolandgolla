@@ -357,8 +357,7 @@
             <div class="col-md-3 col-sm-3 col-xs-12 item">
                 <i class="fa fa-gavel"></i>
                 <h3>Hohe Testabdeckung</h3>
-                <p>Einsatz von <a href="https://phpunit.de/" target="_blank" title="Phpunit Testing Framework für PHP Anwendungen">Phpunit</a> für PHP und
-                    <a href="http://dalekjs.com/" target="_blank" title="Automated cross browser testing with JavaScript">DalekJS</a> als Frontend Testing Framework</p>
+                <p>Einsatz von <a href="http://codeception.com/" target="_blank" title="Codeception Testing Framework für PHP Anwendungen">Codeception</a> als Frontend Testing Framework</p>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-12 item">
                 <i class="fa fa-binoculars"></i>
