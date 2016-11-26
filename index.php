@@ -1,5 +1,5 @@
 <?php
-    $title = 'Clean Code Webdeveloper Webdesign Duisburg Roland Golla';
+    $title = 'Clean Code Webdeveloper Webdesign Duisburg';
     $description = 'Software Qualität, Clean Code und Performance für Webdesign aus Duisburg. Vom Senior Webdeveloper zuverlässige und sichere Webapplikationen erstellen lassen.'
 ?>
 <!DOCTYPE html>
