@@ -1,6 +1,6 @@
 <?php
     $title = 'Clean Code Webdeveloper Webdesign Duisburg';
-    $description = 'Software Qualität, Clean Code und Performance für Webdesign aus Duisburg. Vom Senior Webdeveloper zuverlässige und sichere Webapplikationen erstellen lassen.'
+    $description = 'Clean Code und Performance für Webdesign aus Duisburg. Vom Senior Webdeveloper zuverlässige und sichere Webapplikationen erstellen lassen.'
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
