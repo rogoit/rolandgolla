@@ -7,7 +7,7 @@ set('default_stage', 'production');
 set('repository', 'https://github.com/rogoit/rolandgolla.git');
 set('shared_files', []);
 set('shared_dirs', []);
-set('writable_dirs', []);
+set('writable_dirs', ['var']);
 
 // Servers
 serverList('servers.yml');
