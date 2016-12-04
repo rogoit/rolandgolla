@@ -1,4 +1,6 @@
+/vendor/
+tests/_output/*
+servers.yml
 /node_modules/
 /var/
-/vendor/
 /web/assets/

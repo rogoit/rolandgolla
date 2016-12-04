@@ -1,38 +1,38 @@
 {
-    "name"        : "lyrixx/silex-kitchen-edition",
-    "type"        : "library",
-    "description" : "A Silex Edition. This project is a base for your silex applications.",
-    "keywords"    : ["framework"],
-    "homepage"    : "http://lyrixx.github.com/Silex-Kitchen-Edition/",
-    "license"     : "MIT",
+    "name"        : "rolandgolla.de",
+    "description" : "PHP Kurs portfolio page",
+    "homepage"    : "http://www.rolandgolla.de",
     "authors"     : [
         {
-            "name"  : "Grégoire Pineau",
-            "email" : "lyrixx@lyrixx.info"
+            "name"  : "Roland Golla",
+            "email" : "rolandgolla@gmail.com"
         }
     ],
     "require": {
-        "php"                   : ">=5.5.9",
-        "doctrine/dbal"         : "^2.5.5",
-        "monolog/monolog"       : "^1.21.0",
-        "silex/silex"           : "^2.0.4",
-        "silex/web-profiler"    : "^2.0.5",
-        "symfony/config"        : "^3.1",
-        "symfony/console"       : "^3.1",
-        "symfony/finder"        : "^2.2",
-        "symfony/form"          : "^3.1",
-        "symfony/security"      : "^3.1",
-        "symfony/translation"   : "^3.1",
-        "symfony/twig-bridge"   : "^3.1",
-        "symfony/validator"     : "^3.1",
-        "symfony/yaml"          : "^3.1",
-        "twig/twig"             : "^1.23",
-        "twitter/bootstrap"     : "^3.3.6"
+        "php"                     : ">=5.5.9",
+        "doctrine/dbal"           : "^2.5.5",
+        "monolog/monolog"         : "^1.21.0",
+        "silex/silex"             : "^2.0.4",
+        "silex/web-profiler"      : "^2.0.5",
+        "symfony/config"          : "^3.1",
+        "symfony/console"         : "^3.1",
+        "symfony/finder"          : "^2.2",
+        "symfony/form"            : "^3.1",
+        "symfony/security"        : "^3.1",
+        "symfony/translation"     : "^3.1",
+        "symfony/twig-bridge"     : "^3.1",
+        "symfony/validator"       : "^3.1",
+        "symfony/yaml"            : "^3.1",
+        "twig/twig"               : "^1.23",
+        "twitter/bootstrap"       : "^3.3.6"
     },
     "require-dev": {
-        "symfony/browser-kit"   : "^3.1",
-        "symfony/css-selector"  : "^3.1",
-        "symfony/dom-crawler"   : "^3.1"
+        "symfony/browser-kit"     : "^3.1",
+        "symfony/css-selector"    : "^3.1",
+        "symfony/dom-crawler"     : "^3.1",
+        "codeception/codeception" : "^2.2",
+        "vlucas/phpdotenv"        : "^2.4",
+        "deployer/deployer"       : "^4.0"
     },
     "scripts": {
         "post-install-cmd": "App\\Composer\\Script::install",
@@ -43,8 +43,8 @@
         ]
     },
     "autoload": {
-        "psr-4": {
-            "App\\": "src/App"
-        }
+      "psr-4": {
+        "App\\": "src/App"
+      }
     }
 }
