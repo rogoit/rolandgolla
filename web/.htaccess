@@ -1,8 +1,15 @@
+AddOutputFilterByType DEFLATE text/plain text/html text/xml
+AddOutputFilterByType DEFLATE text/css text/javascript
+AddOutputFilterByType DEFLATE application/xml application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+
 <IfModule mod_rewrite.c>
     Options -MultiViews
 
         RewriteEngine On
-        #RewriteBase /path/to/app
+        RewriteCond %{HTTPS} off
+        RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
         RewriteCond %{REQUEST_FILENAME} !-d
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteRule ^ index.php [QSA,L]
