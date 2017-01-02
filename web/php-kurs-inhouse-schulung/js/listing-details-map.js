@@ -1,0 +1,1 @@
+initMap=function(){var a={lat:47.6205588,lng:-122.3212725},b=new google.maps.Map(document.getElementById("map"),{zoom:15,center:a,scrollwheel:!1}),c="../assets/dist/img/company/map-marker.png";new google.maps.Marker({position:a,map:b,icon:c,title:"Hello World!"})}();

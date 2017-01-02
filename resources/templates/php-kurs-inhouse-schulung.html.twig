@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scholar Online Courses</title>
+    <!-- Main style -->
+    <link rel="stylesheet" href="/php-kurs-inhouse-schulung/css/online-course.style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="rq-page-loading" >
+    <div class="rq-loading-icon"><i class="ion-load-c"></i></div>
+</div>
+<div id="main-wrapper">
+    <header class="header home-header"
+            style="background: url('/php-kurs-inhouse-schulung/img/online-course/online-banner.png') top center no-repeat; background-size: cover;">
+        <div class="header-body" >
+            <div class="container" >
+                <h1 class="wow fadeInUp" >scholar helps you find <br>courses online so easy on the world</h1>
+                <div class="rq-search-wrapper">
+                    <div class="rq-search-toggle">
+                        <button class=" rq-btn rq-btn-primary rounded"><b class="ion-android-search"></b></button>
+                    </div>
+                    <div class="rq-search-container" >
+                        <div class="rq-search-single">
+                            <div class="rq-search-content">
+                                <span class="rq-search-heading">Keywords</span>
+                                <input type="text" class="rq-form-element" placeholder="Search anything..."/>
+                            </div>
+                        </div>
+                        <div class="rq-search-single">
+                            <div class="rq-search-content">
+                                <span class="rq-search-heading">Location</span>
+                                <select name="categories" class="category-option">
+                                    <option value="0">Sanfrancisco,CA</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="rq-search-single">
+                            <div class="rq-search-content">
+                                <span class="rq-search-heading">Categories</span>
+                                <select name="categories" class="category-option">
+                                    <option value="0">All Courses Online</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="rq-search-single search-btn">
+                            <div class="rq-search-content">
+                                <button class="rq-btn rq-btn-primary fluid-btn">Search <i class="arrow_right"></i></button>
+                            </div>
+                        </div>
+                    </div> <!-- / .search-container -->
+                </div>
+                <div class="header-content" >
+                    <p class="header-para">
+                        Choose from hundreds of free online courses from top universities and specialist organisations. Find the right course with our collections or categories, or view all courses starting soon.
+                    </p>
+                </div>
+                <!-- start of data -->
+                <div class="rq-listing-counter home-counter wow fadeIn " data-wow-delay=".3s"> <!-- listing counter portion -->
+                    <div class="row data-thing">
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="rq-listing-counter-item">
+                                <h3 class="rq-listing-counter-number" data-from="25" data-to="12460" data-speed="5000" data-refresh-interval="50" >12,460</h3>
+                                <p class="rq-listing-counter-title">Courses</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="rq-listing-counter-item">
+                                <h3 class="rq-listing-counter-number" data-from="25" data-to="76590" data-speed="5000" data-refresh-interval="50" >76,590</h3>
+                                <p class="rq-listing-counter-title">Learners</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="rq-listing-counter-item no-border">
+                                <h3 class="rq-listing-counter-number" data-from="25" data-to="8670" data-speed="5000" data-refresh-interval="50" >8,670</h3>
+                                <p class="rq-listing-counter-title">Agencies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.header-body -->
+    </header> <!-- end header -->
+
+    <div class="rq-page-content" style="">
+        <div class="rq-content-block no-top-padding">
+            <div class="container">
+                <!-- start of sticky navbar -->
+                <div class="home-page home-page-menu">
+                    <nav class="navbar navbar-default navbar-home with-location" >
+                        <div class="container">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html"><img src="/php-kurs-inhouse-schulung/img/online-course/online_logo.png" alt=""/></a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="index.html" >Home</a></li>
+                                    <li class=""><a href="category.html" >Category</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false">Listing <span class="ion-chevron-down"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="listing-plain-heading.html">Listing Plain Heading</a></li>
+                                            <li><a href="listing-map.html">Listing Map</a></li>
+                                            <li><a href="listing-slider.html">Listing Revolution Slider</a></li>
+                                            <li><a href="listing-banner.html">Listing Banner</a></li>
+                                            <li><a href="listing-adsense.html">Listing Adsense</a></li>
+                                            <li><a href="listing-detail.html">Listing Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false">Blog <span class="ion-chevron-down"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog-grid.html">Blog Grid</a></li>
+                                            <li><a href="blog-list-thumb.html">Blog List Thumb</a></li>
+                                            <li><a href="blog-listing.html">Blog Listing</a></li>
+                                            <li><a href="blog-masonary.html">Blog Masonary</a></li>
+                                            <li><a href="post-image-single.html">Single Image Post</a></li>
+                                            <li><a href="post-gallery-single.html">Single Gallery Post</a></li>
+                                            <li><a href="post-video-single.html">Single Video Post</a></li>
+                                            <li><a href="post-audio-single.html">Single audio Post</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false">Agents <span class="ion-chevron-down"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="users.html">Users</a></li>
+                                            <li><a href="user-profile.html">User Profile</a></li>
+                                            <li><a href="educator.html">Educator</a></li>
+                                            <li><a href="educator_profile.html">Educator Profile</a></li>
+                                            <li><a href="registration.html">Registration</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false">Page <span class="ion-chevron-down"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                            <li><a href="pricing-plan.html">Plan &amp; Pricing</a></li>
+                                            <li><a href="coming-soon.html">Coming Soon </a></li>
+                                            <li><a href="page-404.html">404 page</a></li>
+                                            <li><a href="media-elements.html">Media elements</a></li>
+                                            <li><a href="typography.html">Typography</a></li>
+                                            <li><a href="elements.html">Common elements</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="login-register-link"><a href="registration.html">
+                                            <i class="icon_lock-open_alt"></i>Login or Register</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div><!-- end of sticky navbar -->
+                <!-- listing counter portion end -->
+
+            </div>
+        </div> <!-- end rq-content-block -->
+        <!-- about section -->
+        <div class="rq-content-block no-bottom-padding gray-bg" >
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="rq-title-container " >
+                            <h2 class="rq-title online_home" >About<span> Scholar</span></h2>
+                        </div>
+                        <div class="details">
+                            <p class="details_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptatibus eaque culpa reprehenderit! Dolor iusto praesentium consequuntur ut velit, molestias.lorem15Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+                        </div>
+                        <!-- start-of-slider -->
+                        <div class="rq-listing-single"> <!-- start of banner slider -->
+                            <div class="rq-listing-gallery-post">
+                                <div class="rq-gallery-content">
+                                    <div class="online-course details-slider owl-carousel">
+                                        <div class="item">
+                                            <img src="/php-kurs-inhouse-schulung/img/online-course/post-single/image-post.jpg" alt="">
+                                        </div>
+                                        <div class="item">
+                                            <img src="/php-kurs-inhouse-schulung/img/online-course/post-single/gallery-post.jpg" alt="">
+                                        </div>
+                                        <div class="item">
+                                            <img src="/php-kurs-inhouse-schulung/img/online-course/post-single/gallery-post.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of about section -->
+        <!-- end-of-slider -->
+
+
+
+
+
+
+        <!-- start of why choose schoolar -->
+        <div class="rq-content-block no-bottom-padding" >
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="rq-title-container " >
+                            <h2 class="rq-title online_home">why choose <span>scholar</span></h2>
+                        </div>
+
+                        <div class="details">
+                            <p class="details_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptatibus eaque culpa reprehenderit! Dolor iusto praesentium consequuntur ut velit, molestias.elit. Adipisci voluptatibus eaque culpa reprehenderit! Dolor iusto praesentium consequuntur ut velit, molestias.</p>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12">
+                        <div class="rq-interested-category">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-4 col-lg-4">
+                                    <div class="rq-category-single wow fadeIn" data-wow-delay=".1s">
+                                        <h1 class="rq-block-intro">01</h1>
+                                        <h4 class="rq-feature-title">Course for real jobs</h4>
+                                        <p class="rq-feature-desc">Lorem Ipsum is simply dummy text of the printing and pesetting industry</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-4 col-lg-4">
+                                    <div class="rq-category-single wow fadeIn" data-wow-delay=".2s">
+                                        <h1 class="rq-block-intro">02</h1>
+                                        <h4 class="rq-feature-title">Expert advice</h4>
+                                        <p class="rq-feature-desc">Lorem Ipsum is simply dummy text of the printing and pesetting industry.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-4 col-lg-4">
+                                    <div class="rq-category-single wow fadeIn" data-wow-delay=".3s">
+                                        <h1 class="rq-block-intro">03</h1>
+                                        <h4 class="rq-feature-title">Industry recognition</h4>
+                                        <p class="rq-feature-desc">Lorem Ipsum is simply dummy text of the printing and pesetting industry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of why choose schoolar -->
+
+        <!-- start of popular online courses-->
+        <div class="rq-content-block no-bottom-padding popular_course" >
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-6">
+                        <div class="rq-title-container " >
+                            <h2 class="rq-title online_home" >popular <span>courses</span></h2>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 browse_course" >
+                        <div class="rq-title-container " >
+                            <a href="" class="browse_all_course"><span class="" >Browse All Courses <i class="arrow_right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rq-online-course-slider">
+                <div class="top-online-course owl-carousel">
+                    <div class="item">
+                        <img src="/php-kurs-inhouse-schulung/img/online-course/oc_05.png" alt="">
+                        <div class="rq-online-course-slider-details">
+                            <div class="small_pic">
+                                <img src="/php-kurs-inhouse-schulung/img/online-course/about01.png" alt="">
+                            </div>
+                            <div class="rq-listing-reviews clearfix">
+                                <span class="color_01">cooking</span>
+                            </div>
+                            <h4><a href="#">become a profressional baker in two month</a></h4>
+                            <h3>
+                                <span class="price_tag">price</span>
+                                <span class="new-price">$50.35</span>
+                                <span class="price_tag">|<small>40</small> Learners</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/php-kurs-inhouse-schulung/img/online-course/oc_01.png" alt="">
+                        <div class="rq-online-course-slider-details">
+                            <div class="small_pic">
+                                <img src="/php-kurs-inhouse-schulung/img/online-course/about02.png" alt="">
+                            </div>
+                            <div class="rq-listing-reviews clearfix">
+                                <span class="color_02">Photo & Video</span>
+                            </div>
+                            <h4><a href="#">fundamentals for photographers</a></h4>
+                            <h3>
+                                <span class="price_tag">price</span>
+                                <span class="new-price">$75.52</span>
+                                <span class="price_tag">|<small>768</small> Learners</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/php-kurs-inhouse-schulung/img/online-course/oc_02.png" alt="">
+                        <div class="rq-online-course-slider-details">
+                            <div class="small_pic">
+                                <img src="/php-kurs-inhouse-schulung/img/online-course/about03.png" alt="">
+                            </div>
+                            <div class="rq-listing-reviews clearfix">
+                                <span class="color_03">Customer Service</span>
+                            </div>
+                            <h4><a href="#">how to handle an photography client</a></h4>
+                            <h3>
+                                <span class="price_tag">price</span>
+                                <span class="new-price">$152.50</span>
+                                <span class="price_tag">|<small>1250</small> Learners</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/php-kurs-inhouse-schulung/img/online-course/oc_04.png" alt="">
+                        <div class="rq-online-course-slider-details">
+                            <div class="small_pic">
+                                <img src="/php-kurs-inhouse-schulung/img/online-course/about04.png" alt="">
+                            </div>
+                            <div class="rq-listing-reviews clearfix">
+                                <span class="color_04">3D design</span>
+                            </div>
+                            <h4><a href="#">make a 3d model stunning with 3dsmax</a></h4>
+                            <h3>
+                                <span class="price_tag">price</span>
+                                <span class="new-price color_01">Free</span>
+                                <span class="price_tag">|<small>772</small> Learners</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/php-kurs-inhouse-schulung/img/online-course/oc_03.png" alt="">
+                        <div class="rq-online-course-slider-details">
+                            <div class="small_pic">
+                                <img src="/php-kurs-inhouse-schulung/img/online-course/about05.png" alt="">
+                            </div>
+                            <div class="rq-listing-reviews clearfix">
+                                <span class="color_05">Architecture</span>
+                            </div>
+                            <h4><a href="#">light treatment of the material in 3d</a></h4>
+                            <h3>
+                                <span class="price_tag">price</span>
+                                <span class="new-price color_01">Free</span>
+                                <span class="price_tag">|<small>12563</small> Learners</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/php-kurs-inhouse-schulung/img/online-course/oc_02.png" alt="">
+                        <div class="rq-online-course-slider-details">
+                            <div class="small_pic">
+                                <img src="/php-kurs-inhouse-schulung/img/online-course/about02.png" alt="">
+                            </div>
+                            <div class="rq-listing-reviews clearfix">
+                                <span class="color_03">Customer Service</span>
+                            </div>
+                            <h4><a href="#">how to handle an photography client</a></h4>
+                            <h3>
+                                <span class="price_tag">price</span>
+                                <span class="new-price">$152.50</span>
+                                <span class="price_tag">|<small>1250</small> Learners</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/php-kurs-inhouse-schulung/img/online-course/oc_05.png" alt="">
+                        <div class="rq-online-course-slider-details">
+                            <div class="small_pic">
+                                <img src="/php-kurs-inhouse-schulung/img/online-course/about04.png" alt="">
+                            </div>
+                            <div class="rq-listing-reviews clearfix">
+                                <span class="color_01">cooking</span>
+                            </div>
+                            <h4><a href="#">become a profressional baker in two month</a></h4>
+                            <h3>
+                                <span class="price_tag">price</span>
+                                <span class="new-price">$50.35</span>
+                                <span class="price_tag">|<small>40</small> Learners</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="rq-bottom margin_control">
+                </div>
+            </div>
+        </div>
+
+        <!-- end of popular online courses -->
+        <!-- start of our blog -->
+        <div class="rq-content-block our_blog" >
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="rq-title-container " >
+                            <h2 class="rq-title online_home" >our<span> blog</span></h2>
+                        </div>
+
+                        <div class="rq-tips-trick-wrapper ">
+                            <div class="rq-online-course-slider rq-blog">
+                                <div class="top-online-course-blog owl-carousel">
+                                    <div class="item">
+                                        <div class="rq-tips-single wow fadeIn">
+                                            <div class="rq-tips-date">
+                                                <h2 class="rq-date-title">25 <span>March</span></h2>
+                                            </div>
+                                            <div class="rq-tips-details">
+                                                <a href="#" class="tips-title">put title of standard post here with image format</a>
+                                                <div class="meta">
+                                                    <span>Posted by <a href="#">admin</a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">Discover</a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">13 comments</a></span>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing. Integer eu quam ac nisl iaculis feugiat at at metus  elit ol paraguos omero lorem isup amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="rq-tips-single wow fadeIn">
+                                            <div class="rq-tips-date">
+                                                <h2 class="rq-date-title">3 <span>july</span></h2>
+                                            </div>
+                                            <div class="rq-tips-details">
+                                                <a href="#" class="tips-title">put title of standard post here with image format</a>
+                                                <div class="meta">
+                                                    <span>Posted by <a href="#">Cknightz </a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">Tips</a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">5 comments</a></span>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing. Integer eu quam ac nisl iaculis feugiat at at metus  elit ol paraguos omero lorem isup amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="rq-tips-single wow fadeIn">
+                                            <div class="rq-tips-date">
+                                                <h2 class="rq-date-title">17 <span>March</span></h2>
+                                            </div>
+                                            <div class="rq-tips-details">
+                                                <a href="#" class="tips-title">put title of standard post here with image format</a>
+                                                <div class="meta">
+                                                    <span>Posted by <a href="#">admin</a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">Discover</a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">13 comments</a></span>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing. Integer eu quam ac nisl iaculis feugiat at at metus  elit ol paraguos omero lorem isup amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="rq-tips-single wow fadeIn">
+                                            <div class="rq-tips-date">
+                                                <h2 class="rq-date-title">25 <span>May</span></h2>
+                                            </div>
+                                            <div class="rq-tips-details">
+                                                <a href="#" class="tips-title">put title of standard post here with image format</a>
+                                                <div class="meta">
+                                                    <span>Posted by <a href="#">Cknightz </a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">Tips</a></span>
+                                                    <span class="bar">/</span>
+                                                    <span><a href="#">5 comments</a></span>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing. Integer eu quam ac nisl iaculis feugiat at at metus  elit ol paraguos omero lorem isup amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of our blog -->
+        <!-- start of newsletter -->
+        <div class="rq-content-block gray-bg news_letter">
+            <div class="newsletter-content">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <div class="rq-title-container " style="">
+                                <h2 class="rq-title online_home" >
+
+                                    Our<span> newsletter</span>
+
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form class="rq-newsletter-form" action="#">
+                                <input class="" type="email" placeholder="email@domain.com">
+                                <button type="submit" class="rq-btn rq-btn-primary"><span>Subscribe</span> <i class="arrow_right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- end of newsletter -->
+        <!-- /end of .page-content -->
+    </div> <!-- end #main-wrapper -->
+
+
+    <footer class="rq-footer">
+        <div class="rq-main-footer">
+            <div class="container">
+                <ul class="rq-footer-social">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#" style="color: white">Twitter</a></li>
+                    <li><a href="#">Google +</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div> <!-- /.rq-main-footer -->
+        <div class="rq-copyright-section">
+            <div class="container">
+                <p>Copyright © 2016 <a href="#">scholar Inc</a>. <i class="fa fa-circle"></i>
+                    Address <i class="fa fa-circle"></i><span>Tel: 42-898-4363</span>  Get the Theme Contact
+                </p>
+                <h6>Made by <a href="#">RedQTeam</a></h6>
+            </div>
+        </div> <!-- /.rq-copyright-section -->
+    </footer>
+    <script src="/php-kurs-inhouse-schulung/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/php-kurs-inhouse-schulung/js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="/php-kurs-inhouse-schulung/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/php-kurs-inhouse-schulung/js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="/php-kurs-inhouse-schulung/js/selectize.min.js"></script>
+    <script src="/php-kurs-inhouse-schulung/js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="/php-kurs-inhouse-schulung/js/jquery.counterup.js" type="text/javascript"></script>
+    <script src="/php-kurs-inhouse-schulung/js/wow.min.js"></script>
+    <script src="/php-kurs-inhouse-schulung/js/owl-carousel.js"></script>
+    <script src="/php-kurs-inhouse-schulung/js/jquery.nicescroll.js"></script>
+    <script src="/php-kurs-inhouse-schulung/js/scripts.js" type="text/javascript"></script>
+</body>
+</html>
