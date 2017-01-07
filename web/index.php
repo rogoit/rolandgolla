@@ -11,7 +11,7 @@ Symfony\Component\Debug\Debug::enable();
 
 $app = new App\Application('dev');
 
-$app->get('/php-kurs-inhouse-schulung', function () use ($app) {
+$app->get('/php-kurs-inhouse-schulung/', function () use ($app) {
     return $app['twig']->render('php-kurs-inhouse-schulung.html.twig');
 });
 
