@@ -12,7 +12,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 Symfony\Component\Debug\Debug::enable();
 
-// $app = new App\Application('dev');
+$app = new App\Application('prod');
 
 $app->before(function (Request $request) {
     if (0 === strpos($request->headers->get('Content-Type'), 'application/json')) {
