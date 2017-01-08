@@ -4,3 +4,4 @@ servers.yml
 /node_modules/
 /var/
 /web/assets/
+web/index_dev.php
