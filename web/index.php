@@ -12,7 +12,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 Symfony\Component\Debug\Debug::enable();
 
-$app = new App\Application('prod');
+$app = new App\Application('dev');
 
 $app->before(function (Request $request) {
     if (0 === strpos($request->headers->get('Content-Type'), 'application/json')) {
@@ -21,7 +21,7 @@ $app->before(function (Request $request) {
     }
 });
 
-$app->get('/php-kurs-inhouse-schulung/', function () use ($app) {
+$app->get('/php-kurs-inhouse-schulung', function () use ($app) {
     return $app['twig']->render('php-kurs-inhouse-schulung.html.twig');
 });
 
