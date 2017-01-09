@@ -21,7 +21,7 @@ $app->before(function (Request $request) {
     }
 });
 
-$app->get('/php-kurs-inhouse-schulung', function () use ($app) {
+$app->get('/php-kurs-inhouse-schulung/', function () use ($app) {
     return $app['twig']->render('php-kurs-inhouse-schulung.html.twig');
 });
 
