@@ -1,40 +1,10 @@
 <?php
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\ParameterBag;
-
 require_once __DIR__.'/../vendor/autoload.php';
-
-Symfony\Component\Debug\Debug::enable();
 
 $app = new App\Application('prod');
 
-$app->before(function (Request $request) {
-    if (0 === strpos($request->headers->get('Content-Type'), 'application/json')) {
-        $data = json_decode($request->getContent(), true);
-        $request->request->replace(is_array($data) ? $data : array());
-    }
-});
-
-$app->get('/php-kurs-inhouse-schulung/', function () use ($app) {
-    return $app['twig']->render('php-kurs-inhouse-schulung.html.twig');
-});
-
-
-$app->post('/emailform/', function (Request $request) use ($app) {
-    $email = $request->request->get('email');
-
-    $email = (filter_var($email, FILTER_VALIDATE_EMAIL));
-
-    if($email) {
-        mail('rolandgolla@gmail.com', 'Kontakt LP', $email);
-    }
-
-    $post = array(
-        'msg' => 'ok'
-    );
-
-    return $app->json($post, 201);
-});
+require __DIR__.'/../config/prod.php';
+require __DIR__.'/../src/controllers.php';
 
 $app->run();
