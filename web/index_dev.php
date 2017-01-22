@@ -21,5 +21,4 @@ Debug::enable();
 $app = new App\Application('dev');
 
 require __DIR__.'/../config/dev.php';
-require __DIR__.'/../src/controllers.php';
 $app->run();
