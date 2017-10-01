@@ -1,27 +1,28 @@
 <?php
 
+use Step\Acceptance\Acceptance;
 
 class sliderCest
 {
-    public function _before(AcceptanceTester $I)
+    public function _before(Acceptance $I)
     {
         $I->amOnPage('/');
         $I->waitForElement('h2');
     }
 
-    public function sliderHasElements(AcceptanceTester $I)
+    public function sliderHasElements(Acceptance $I)
     {
         $I->seeNumberOfElements('.tp-banner > ul > li', [1,5]);
     }
 
-    public function sliderHasArrows(AcceptanceTester $I)
+    public function sliderHasArrows(Acceptance $I)
     {
         $firstItem = '.tp-banner > ul > li:nth-of-type(1)';
         $I->moveMouseOver($firstItem);
         $I->seeNumberOfElements('#slider-block > div > div.tparrows', 2);
     }
 
-    public function bgImageisUnique(AcceptanceTester $I)
+    public function bgImageisUnique(Acceptance $I)
     {
         $bgImages = $aLinks = $I->grabMultiple('.tp-banner > ul > li > div.slotholder > div.tp-bgimg', 'src');
         foreach ($bgImages as $bgImage) {
@@ -31,7 +32,7 @@ class sliderCest
         }
     }
 
-    public function noMouseAutomateSlide(AcceptanceTester $I)
+    public function noMouseAutomateSlide(Acceptance $I)
     {
         $I->reloadPage();
         $styles = $I->grabAttributeFrom('.tp-banner > ul > li:nth-of-type(1)', 'style');
@@ -44,7 +45,7 @@ class sliderCest
         $I->assertContains('visibility: hidden; opacity: 0;', $styles);
     }
 
-    public function onMouseOverStopSlide(AcceptanceTester $I)
+    public function onMouseOverStopSlide(Acceptance $I)
     {
         $firstItem = '.tp-banner > ul > li:nth-of-type(1)';
 
@@ -58,7 +59,7 @@ class sliderCest
         $I->waitForElementVisible('.tp-banner > ul > li:nth-of-type(2)', 15);
     }
 
-    public function rwdResize(AcceptanceTester $I) {
+    public function rwdResize(Acceptance $I) {
         $promoLike = '.tp-banner > ul > li.slider-item-1.current-sr-slide-visible > div.tp-caption.large_text.customin.customout.start > div.promo-like > i';
 
         $I->waitForElement($promoLike);
@@ -66,5 +67,6 @@ class sliderCest
         $I->resizeWindow(400, 800);
         $I->dontSee($promoLike);
         $I->resizeWindow(1600, 1000);
+        $I->testify();
     }
 }
