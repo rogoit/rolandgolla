@@ -10,4 +10,5 @@ class Acceptance extends \AcceptanceTester
         parent::__construct($scenario);
         $this->overwriteConfigByEnv();
     }
+
 }

@@ -23,4 +23,9 @@ class AcceptanceTester extends \Codeception\Actor
    /**
     * Define custom actions here
     */
+
+
+    public function testify() {
+        return true;
+    }
 }
