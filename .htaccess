@@ -6,6 +6,8 @@ AddOutputFilterByType DEFLATE application/javascript application/x-javascript
 
 ErrorDocument 404 http://www.rolandgolla.de
 
+Options -Indexes
+
 <IfModule mod_rewrite.c>
     Options -MultiViews
 
