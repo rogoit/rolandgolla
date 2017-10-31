@@ -34,8 +34,8 @@ class ControllerProvider implements ControllerProviderInterface
             ->bind('index');
 
         $controllers
-            ->get('/php-kurs-inhouse-schulung/', [$this, 'phpKursInhouseSchulung'])
-            ->bind('phpKursInhouseSchulung');
+            ->get('/php-schulung-training/', [$this, 'phpSchulungTraining'])
+            ->bind('phpSchulungTraining');
 
         $controllers
             ->post('/emailform/', [$this, 'emailForm'])
@@ -49,9 +49,9 @@ class ControllerProvider implements ControllerProviderInterface
         return $app['twig']->render('index.html.twig');
     }
 
-    public function phpKursInhouseSchulung(App $app)
+    public function phpSchulungTraining(App $app)
     {
-        return $app['twig']->render('php-kurs-inhouse-schulung.html.twig');
+        return $app['twig']->render('php-schulung-training.html.twig');
     }
 
     public function emailForm(App $app, Request $request)
